@@ -1,0 +1,260 @@
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .h-font {
+        font-family: "Merienda", cursive;
+      }
+      /* Carousel height */
+      .carousel-item {
+        height: 90vh;
+        min-height: 400px;
+      }
+      .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      /* Static overlay text */
+      .hero-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 0px 3px 8px rgba(0,0,0,0.5);
+        z-index: 10;
+      }
+      .hero-overlay h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      .hero-overlay p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      /* Section styles */
+      .section-heading {
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      .card img {
+        height: 220px;
+        object-fit: cover;
+      }
+      .about-img {
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+      }
+      .facility-icon {
+        font-size: 2rem;
+        color: #0d6efd;
+      }
+      footer {
+        background: #111;
+        color: #aaa;
+      }
+      footer a {
+        color: #aaa;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: white;
+      }
+      /* Luxury Login Modal */
+      .login-modal .modal-dialog {
+        max-width: 400px;
+      }
+
+  .login-modal .modal-content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    animation: fadeInScale 0.4s ease;
+  }
+
+  @keyframes fadeInScale {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  .login-modal .modal-header {
+    border-bottom: none;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  .login-modal .modal-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: white;
+  }
+
+  .login-modal .modal-body {
+    padding: 2rem;
+  }
+
+  .login-modal .form-control {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 12px;
+    padding-left: 40px;
+  }
+
+  .login-modal .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .login-modal .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+  }
+
+  .login-modal .btn-primary {
+    border-radius: 12px;
+    font-size: 1.1rem;
+    padding: 0.6rem;
+    background: linear-gradient(135deg, #0d6efd, #003580);
+    border: none;
+  }
+
+  .login-modal .btn-primary:hover {
+    background: linear-gradient(135deg, #003580, #0d6efd);
+  }
+
+  .login-modal .form-check-label,
+  .login-modal a {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  /* Modal glassmorphism styling */
+  .login-modal .modal-content {
+    background: rgba(255 255 255 / 0.12);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1.5px solid rgba(255 255 255 / 0.3);
+    box-shadow: 0 12px 48px rgba(0 0 0 / 0.3);
+    animation: fadeInScale 0.45s ease forwards;
+    padding: 2rem 1.8rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Animation */
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Modal header */
+  .login-modal .modal-header {
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    border: none;
+    color: white;
+    font-family: 'Merienda', cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  /* Close button */
+  .login-modal .btn-close-white {
+    filter: invert(1);
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+  }
+
+  .login-modal .btn-close-white:hover {
+    opacity: 1;
+  }
+
+  /* Inputs */
+  .login-modal .form-control {
+    background: rgba(255 255 255 / 0.18);
+    border: 1.2px solid rgba(255 255 255 / 0.4);
+    color: white;
+    border-radius: 14px;
+    padding-left: 42px;
+    height: 48px;
+    font-size: 1rem;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+
+  .login-modal .form-control::placeholder {
+    color: rgba(255 255 255 / 0.7);
+    font-weight: 500;
+  }
+
+  .login-modal .form-control:focus {
+    background: rgba(255 255 255 / 0.3);
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px #0d6efd;
+    color: white;
+    outline: none;
+  }
+
+  /* Icons inside inputs */
+  .login-modal .input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255 255 255 / 0.75);
+    font-size: 1.3rem;
+    pointer-events: none;
+    transition: color 0.3s ease;
+  }
+
+  .login-modal .form-control:focus + .input-icon {
+    color: #0d6efd;
+  }
+
+  /* Show password toggle button */
+  .login-modal .show-pass-btn {
+    border-radius: 50%;
+    padding: 0.15rem 0.25rem;
+    color: rgba(255 255 255 / 0.85);
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .login-modal .show-pass-btn:hover {
+    color: #0d6efd;
+  }
+
+  /* Register button */
+  .login-modal .btn-primary {
+    border-radius: 18px;
+    font-size: 1.15rem;
+    padding: 0.7rem;
+    background: linear-gradient(135deg, #0d6efd, #003580);
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.6);
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+  }
+
+  .login-modal .btn-primary:hover,
+  .login-modal .btn-primary:focus {
+    background: linear-gradient(135deg, #003580, #0d6efd);
+    box-shadow: 0 10px 40px rgba(13, 110, 253, 0.8);
+    outline: none;
+    color: white;
+  }
+
+

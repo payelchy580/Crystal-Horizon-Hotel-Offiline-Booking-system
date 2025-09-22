@@ -1,0 +1,49 @@
+  :root{
+    --brand:#0d6efd;
+    --brand-2:#003580;
+  }
+  *{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  .h-font{font-family:Merienda,cursive}
+  body{background:#f4f6f9}
+  .topbar{
+    background:#111; color:#fff;
+    padding:.9rem 1rem; box-shadow:0 4px 14px rgba(0,0,0,.2);
+    position:sticky; top:0; z-index:1030;
+  }
+  .brand-badge{
+    font-weight:700; letter-spacing:.3px;
+  }
+  .sidebar{
+    min-height:100vh; background:#0f1115; color:#e8e8e8;
+    position:sticky; top:60px;
+  }
+  .sidebar .nav-link{
+    color:#cfcfcf; border-radius:10px; margin:.15rem 0;
+  }
+  .sidebar .nav-link.active, .sidebar .nav-link:hover{
+    background:rgba(255,255,255,.08); color:#fff;
+  }
+  .glass-card{
+    background:rgba(255,255,255,.9);
+    border:1px solid rgba(0,0,0,.06);
+    border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.08);
+  }
+  .stat-card i{opacity:.9}
+  .dlt-btn{
+    background: linear-gradient(135deg, #FF0000, #8B0000);
+    color:#fff; border:none;
+  }
+  .btn-gradient{
+    background: linear-gradient(135deg, #023201, #359e01);
+    /* background:linear-gradient(135deg,var(--danger),var(--brand-2)); */
+    color:#fff; border:none;
+  }
+  .btn-gradient:hover{filter:brightness(.95); color:#fff}
+  .dropdown-icon-btn{color:#6c757d}
+  .dropdown-icon-btn:hover{color:#111}
+  .table thead th{font-weight:600}
+  .offcanvas-dark{background:#0f1115; color:#fff}
+  .offcanvas-dark .nav-link{color:#ddd}
+  .offcanvas-dark .nav-link:hover{background:rgba(255,255,255,.08); border-radius:10px}
+  .form-control, .form-select{border-radius:12px}
+  .section-title{font-weight:700}
